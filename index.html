@@ -55,27 +55,33 @@
         <img class="image small" src="assets/progress-2.png" alt="" />
         <img class="image small" src="assets/progress-3.png" alt="" />
         <p style="max-width: 1100px; margin: 0 auto;">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, sint!
-          Temporibus corporis ipsam soluta vero fugiat? Tenetur, aliquid
-          voluptate iure qui ea aspernatur ad, quae quo id soluta eos libero.
+          One of my earliest tasks was to create a dynamic welcome screen for Strands that
+          would display the player's progress on their daily puzzle. A different progress icon
+          and text would be displayed depending on how many words a player has found. I wrote custom
+          redux selectors to fetch the necessary player data, as well as adding unit tests to verify
+          proper rendering, and Storybook controls to see the variety of progress states and maintain
+          our component driven development. 
         </p>
       </section>
       <h2>Strands Completion Screen</h2>
       <section>
         <img class="image" src="assets/congrats.png" alt="" />
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, sint!
-          Temporibus corporis ipsam soluta vero fugiat? Tenetur, aliquid
-          voluptate iure qui ea aspernatur ad, quae quo id soluta eos libero.
+          For the Strands completion screen, I added a display where the player can see a row of their statistics
+          on Strands. This completion screen is dynamic based on the user state of the player. For example, if the player
+          is not registered, instead of displaying statistics, we display a registration CTA which encourages players to
+          register to see their unique statistics.
         </p>
       </section>
       <h2>Strands Statistics Display</h2>
       <section>
         <img class="image" src="assets/stats.png" alt="" />
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, sint!
-          Temporibus corporis ipsam soluta vero fugiat? Tenetur, aliquid
-          voluptate iure qui ea aspernatur ad, quae quo id soluta eos libero.
+          Lastly, was displaying the statistics themselves. Collaborating with other engineers on this task, I learned how we
+          store and track player statistics through a Golang pipeline to a database, incrementing stats such as "Spangram Firsts"
+          and "No Hints" when the player enters the Strands player or finishes a puzzle. Lastly, I added a dismissable message that
+          notifies players about the new Strands stats feature. This message uses local storage to ensure the user sees the message
+          at least twice before it disappears.
         </p>
       </section>
     </main>
